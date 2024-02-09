@@ -1,7 +1,3 @@
-Sure, here's a suggested README for your Robot Framework project:
-
----
-
 # ECommerce Robot Tests
 
 This project contains automated tests for an eCommerce website using Robot Framework.
@@ -55,7 +51,3 @@ This test case scrapes the names and prices of sofas from the shopist.io website
 ## License
 
 This project is licensed under the [MIT License](LICENSE).
-
----
-
-Feel free to adjust the content and formatting according to your preferences and project requirements.
