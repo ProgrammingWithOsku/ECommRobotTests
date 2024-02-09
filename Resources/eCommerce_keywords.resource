@@ -1,7 +1,11 @@
-*** Settings ***
-Library    CSVLibrary
-
 *** Keywords ***
+
+Send Test Email On Completion
+    [Arguments]    ${TEST_NAME}
+    ${status}=    Get Variable Value    ${TEST STATUS}    FAILED
+    Send Test Status Email    ${TEST_NAME}    ${status}
+
+
 Read CSV File
     [Arguments]    ${file_path}
     ${data}=    Read CSV    ${file_path}

@@ -1,16 +1,26 @@
-# Ignore Pipenv virtual environment
+# Ignore virtual environment
 /.venv
+# If using pipenv and want to exclude the virtualenvs created outside the project
+# *.lock
 
 # Ignore Robot Framework output files
 /output.xml
 /log.html
 /report.html
+/pabot_results/
 
-# Ignore any compiled Python files
+# Ignore Python bytecode and cache
 *.pyc
+__pycache__/
 
-# Ignore any local configuration files
-/.vscode
-/.idea
-/.vs
-/.Reports
+# Ignore local configuration files and directories
+.vscode/
+.idea/
+.vs/
+Reports/
+
+# Additional common ignores
+.DS_Store
+*.log
+.env
+docker-compose.override.yml
