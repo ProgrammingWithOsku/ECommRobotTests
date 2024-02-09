@@ -1,0 +1,88 @@
+{"level":30,"time":"2024-02-09T14:28:05.665Z","pid":32536,"hostname":"Osku","msg":"Listening on 50802"}
+(node:32536) DeprecationWarning: Calling start() is no longer necessary. It can be safely omitted.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+{"level":30,"time":"2024-02-09T14:28:05.894Z","pid":32536,"hostname":"Osku","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2024-02-09T14:28:05.894Z","pid":32536,"hostname":"Osku","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2024-02-09T14:28:05.896Z","pid":32536,"hostname":"Osku","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2024-02-09T14:28:05.896Z","pid":32536,"hostname":"Osku","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2024-02-09T14:28:05.901Z","pid":32536,"hostname":"Osku","msg":"Start of node method newBrowser"}
+{"level":30,"time":"2024-02-09T14:28:09.089Z","pid":32536,"hostname":"Osku","msg":"Adding browser to stack: chromium, version: 121.0.6167.57"}
+{"level":30,"time":"2024-02-09T14:28:09.089Z","pid":32536,"hostname":"Osku","msg":"End of node method newBrowser"}
+{"level":30,"time":"2024-02-09T14:28:09.089Z","pid":32536,"hostname":"Osku","msg":"Adding 0 contexts to browser"}
+{"level":30,"time":"2024-02-09T14:28:09.091Z","pid":32536,"hostname":"Osku","msg":"Start of node method newContext"}
+{"level":30,"time":"2024-02-09T14:28:09.091Z","pid":32536,"hostname":"Osku","msg":"currentBrowser: [object Object]"}
+{"level":30,"time":"2024-02-09T14:28:09.091Z","pid":32536,"hostname":"Osku","msg":"Trace file: "}
+{"level":30,"time":"2024-02-09T14:28:09.097Z","pid":32536,"hostname":"Osku","msg":"Changed active context"}
+{"level":30,"time":"2024-02-09T14:28:09.097Z","pid":32536,"hostname":"Osku","msg":"End of node method newContext"}
+{"level":30,"time":"2024-02-09T14:28:09.099Z","pid":32536,"hostname":"Osku","msg":"Start of node method newPage"}
+{"level":30,"time":"2024-02-09T14:28:09.099Z","pid":32536,"hostname":"Osku","msg":"currentBrowser: [object Object]"}
+{"level":30,"time":"2024-02-09T14:28:12.344Z","pid":32536,"hostname":"Osku","msg":"Video path: undefined"}
+{"level":30,"time":"2024-02-09T14:28:12.344Z","pid":32536,"hostname":"Osku","msg":"Changed active page"}
+{"level":30,"time":"2024-02-09T14:28:12.853Z","pid":32536,"hostname":"Osku","msg":"End of node method newPage"}
+{"level":30,"time":"2024-02-09T14:28:12.856Z","pid":32536,"hostname":"Osku","msg":"Start of node method click"}
+{"level":30,"time":"2024-02-09T14:28:12.857Z","pid":32536,"hostname":"Osku","msg":"Strict mode is enabled, find Locator with css=#__layout > div > div:nth-child(1) > div.navbar-large > div > div:nth-child(2) > a.profile > div > div in page."}
+{"level":30,"time":"2024-02-09T14:28:13.382Z","pid":32536,"hostname":"Osku","msg":"End of node method click"}
+{"level":30,"time":"2024-02-09T14:28:13.384Z","pid":32536,"hostname":"Osku","msg":"Start of node method click"}
+{"level":30,"time":"2024-02-09T14:28:13.384Z","pid":32536,"hostname":"Osku","msg":"Strict mode is enabled, find Locator with css=#main > section > a in page."}
+{"level":30,"time":"2024-02-09T14:28:13.495Z","pid":32536,"hostname":"Osku","msg":"End of node method click"}
+{"level":30,"time":"2024-02-09T14:28:13.498Z","pid":32536,"hostname":"Osku","msg":"Start of node method fillText"}
+{"level":30,"time":"2024-02-09T14:28:13.498Z","pid":32536,"hostname":"Osku","msg":"Strict mode is enabled, find Locator with css=#main > section > div > div:nth-child(3) > div:nth-child(1) > label in page."}
+{"level":30,"time":"2024-02-09T14:28:13.819Z","pid":32536,"hostname":"Osku","msg":"End of node method fillText"}
+{"level":30,"time":"2024-02-09T14:28:13.822Z","pid":32536,"hostname":"Osku","msg":"Start of node method fillText"}
+{"level":30,"time":"2024-02-09T14:28:13.822Z","pid":32536,"hostname":"Osku","msg":"Strict mode is enabled, find Locator with css=#main > section > div > div:nth-child(3) > div:nth-child(2) > label in page."}
+{"level":30,"time":"2024-02-09T14:28:13.830Z","pid":32536,"hostname":"Osku","msg":"End of node method fillText"}
+{"level":30,"time":"2024-02-09T14:28:13.831Z","pid":32536,"hostname":"Osku","msg":"Start of node method click"}
+{"level":30,"time":"2024-02-09T14:28:13.832Z","pid":32536,"hostname":"Osku","msg":"Strict mode is enabled, find Locator with css=#main > section > div > div.button-row > button.button.big.inverted in page."}
+{"level":30,"time":"2024-02-09T14:28:13.855Z","pid":32536,"hostname":"Osku","msg":"End of node method click"}
+{"level":30,"time":"2024-02-09T14:28:13.856Z","pid":32536,"hostname":"Osku","msg":"Start of node method closeBrowser"}
+{"level":30,"time":"2024-02-09T14:28:13.861Z","pid":32536,"hostname":"Osku","msg":"Removed page=b19b3505-76bf-4759-aead-b5bb206d96ab from context=ee5dd969-fbe8-41d8-879e-892a5f0c7c41 page stack"}
+{"level":30,"time":"2024-02-09T14:28:13.995Z","pid":32536,"hostname":"Osku","msg":"End of node method closeBrowser"}
+================= Original suppressed error =================
+Error: Browser has been closed.
+    at PlaywrightState.getActiveBrowser (C:\Users\osama\.virtualenvs\ECommRobotTests-zEVGX_MZ\Lib\site-packages\Browser\wrapper\index.js:9965:15)
+    at PlaywrightServer.getActiveBrowser (C:\Users\osama\.virtualenvs\ECommRobotTests-zEVGX_MZ\Lib\site-packages\Browser\wrapper\index.js:10590:59)
+    at PlaywrightServer.setTimeout (C:\Users\osama\.virtualenvs\ECommRobotTests-zEVGX_MZ\Lib\site-packages\Browser\wrapper\index.js:10840:57)
+    at Object.onReceiveHalfClose (C:\Users\osama\.virtualenvs\ECommRobotTests-zEVGX_MZ\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server.js:1084:25)
+    at BaseServerInterceptingCall.maybePushNextMessage (C:\Users\osama\.virtualenvs\ECommRobotTests-zEVGX_MZ\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:516:31)
+    at BaseServerInterceptingCall.handleEndEvent (C:\Users\osama\.virtualenvs\ECommRobotTests-zEVGX_MZ\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:554:14)
+    at ServerHttp2Stream.<anonymous> (C:\Users\osama\.virtualenvs\ECommRobotTests-zEVGX_MZ\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:363:18)
+    at ServerHttp2Stream.emit (node:events:530:35)
+    at endReadableNT (node:internal/streams/readable:1696:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+=============================================================
+{"level":30,"time":"2024-02-09T14:28:14.011Z","pid":32536,"hostname":"Osku","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2024-02-09T14:28:14.011Z","pid":32536,"hostname":"Osku","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2024-02-09T14:28:14.012Z","pid":32536,"hostname":"Osku","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2024-02-09T14:28:14.012Z","pid":32536,"hostname":"Osku","msg":"End of node method getBrowserCatalog"}
+================= Original suppressed error =================
+Error: Browser has been closed.
+    at PlaywrightState.getActiveBrowser (C:\Users\osama\.virtualenvs\ECommRobotTests-zEVGX_MZ\Lib\site-packages\Browser\wrapper\index.js:9965:15)
+    at PlaywrightServer.getActiveBrowser (C:\Users\osama\.virtualenvs\ECommRobotTests-zEVGX_MZ\Lib\site-packages\Browser\wrapper\index.js:10590:59)
+    at PlaywrightServer.setTimeout (C:\Users\osama\.virtualenvs\ECommRobotTests-zEVGX_MZ\Lib\site-packages\Browser\wrapper\index.js:10840:57)
+    at Object.onReceiveHalfClose (C:\Users\osama\.virtualenvs\ECommRobotTests-zEVGX_MZ\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server.js:1084:25)
+    at BaseServerInterceptingCall.maybePushNextMessage (C:\Users\osama\.virtualenvs\ECommRobotTests-zEVGX_MZ\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:516:31)
+    at BaseServerInterceptingCall.handleEndEvent (C:\Users\osama\.virtualenvs\ECommRobotTests-zEVGX_MZ\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:554:14)
+    at ServerHttp2Stream.<anonymous> (C:\Users\osama\.virtualenvs\ECommRobotTests-zEVGX_MZ\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:363:18)
+    at ServerHttp2Stream.emit (node:events:530:35)
+    at endReadableNT (node:internal/streams/readable:1696:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+=============================================================
+{"level":30,"time":"2024-02-09T14:28:25.616Z","pid":32536,"hostname":"Osku","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2024-02-09T14:28:25.617Z","pid":32536,"hostname":"Osku","msg":"End of node method getBrowserCatalog"}
+================= Original suppressed error =================
+Error: Browser has been closed.
+    at PlaywrightState.getActiveBrowser (C:\Users\osama\.virtualenvs\ECommRobotTests-zEVGX_MZ\Lib\site-packages\Browser\wrapper\index.js:9965:15)
+    at PlaywrightServer.getActiveBrowser (C:\Users\osama\.virtualenvs\ECommRobotTests-zEVGX_MZ\Lib\site-packages\Browser\wrapper\index.js:10590:59)
+    at PlaywrightServer.setTimeout (C:\Users\osama\.virtualenvs\ECommRobotTests-zEVGX_MZ\Lib\site-packages\Browser\wrapper\index.js:10840:57)
+    at Object.onReceiveHalfClose (C:\Users\osama\.virtualenvs\ECommRobotTests-zEVGX_MZ\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server.js:1084:25)
+    at BaseServerInterceptingCall.maybePushNextMessage (C:\Users\osama\.virtualenvs\ECommRobotTests-zEVGX_MZ\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:516:31)
+    at BaseServerInterceptingCall.handleEndEvent (C:\Users\osama\.virtualenvs\ECommRobotTests-zEVGX_MZ\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:554:14)
+    at ServerHttp2Stream.<anonymous> (C:\Users\osama\.virtualenvs\ECommRobotTests-zEVGX_MZ\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:363:18)
+    at ServerHttp2Stream.emit (node:events:530:35)
+    at endReadableNT (node:internal/streams/readable:1696:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+=============================================================
+{"level":30,"time":"2024-02-09T14:28:29.720Z","pid":32536,"hostname":"Osku","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2024-02-09T14:28:29.720Z","pid":32536,"hostname":"Osku","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2024-02-09T14:28:29.736Z","pid":32536,"hostname":"Osku","msg":"Start of node method closeAllBrowsers"}
+{"level":30,"time":"2024-02-09T14:28:29.736Z","pid":32536,"hostname":"Osku","msg":"End of node method closeAllBrowsers"}

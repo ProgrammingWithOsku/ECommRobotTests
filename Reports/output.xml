@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.12.1 on win32)" generated="2024-02-09T16:28:01.037391" rpa="false" schemaversion="5">
+<suite id="s1" name="eCommerce tests" source="C:\Users\osama\Desktop\ECommRobotTests\ECommRobotTests\Tests\eCommerce_tests.robot">
+<test id="s1-t1" name="Update Profile Name" line="5">
+<kw name="Update Profile Name" owner="eCommerce_keywords">
+<kw name="Read CSV File" owner="eCommerce_keywords">
+<kw name="Read Csv" owner="csv_reader">
+<msg time="2024-02-09T16:28:05.898944" level="INFO">${data} = [['Osamah', 'Amer']]</msg>
+<var>${data}</var>
+<arg>${file_path}</arg>
+<status status="PASS" start="2024-02-09T16:28:05.898944" elapsed="0.000000"/>
+</kw>
+<return>
+<value>${data}</value>
+<status status="PASS" start="2024-02-09T16:28:05.898944" elapsed="0.000000"/>
+</return>
+<msg time="2024-02-09T16:28:05.898944" level="INFO">${names} = [['Osamah', 'Amer']]</msg>
+<var>${names}</var>
+<arg>Data/names.csv</arg>
+<status status="PASS" start="2024-02-09T16:28:05.897945" elapsed="0.000999"/>
+</kw>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2024-02-09T16:28:05.899944" level="INFO">${first_name} = Osamah</msg>
+<var>${first_name}</var>
+<arg>${names[0][0]}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2024-02-09T16:28:05.898944" elapsed="0.001000"/>
+</kw>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2024-02-09T16:28:05.899944" level="INFO">${second_name} = Amer</msg>
+<var>${second_name}</var>
+<arg>${names[0][1]}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2024-02-09T16:28:05.899944" elapsed="0.000000"/>
+</kw>
+<kw name="Open Browser" owner="Browser">
+<msg time="2024-02-09T16:28:05.899944" level="WARN">Open Browser is for quick experimentation and debugging only. Use New Page for production.</msg>
+<msg time="2024-02-09T16:28:05.900944" level="INFO">{"browser": "chromium", "headless": false, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "C:\\Users\\osama\\Desktop\\ECommRobotTests\\ECommRobotTests\\Reports\\browser\\traces\\5f3602c0-1134-432b-b2c5-ddfaeef242b0"}</msg>
+<msg time="2024-02-09T16:28:09.090311" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":false,"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"C:\\Users\\osama\\Desktop\\ECommRobotTests\\ECommRobotTests\\Reports\\browser\\traces\\5f3602c0-1134-432b-b2c5-ddfaeef242b0"}</msg>
+<msg time="2024-02-09T16:28:09.090311" level="INFO">{
+  "acceptDownloads": true,
+  "bypassCSP": true,
+  "forcedColors": "none",
+  "ignoreHTTPSErrors": false,
+  "javaScriptEnabled": true,
+  "offline": false,
+  "reducedMotion": "no-preference",
+  "serviceWorkers": "allow",
+  "viewport": {
+    "height": 720,
+    "width": 1280
+  }
+}</msg>
+<msg time="2024-02-09T16:28:09.098316" level="INFO">Successfully created context. </msg>
+<msg time="2024-02-09T16:28:09.098316" level="INFO">{'acceptDownloads': True, 'bypassCSP': True, 'forcedColors': 'none', 'ignoreHTTPSErrors': False, 'javaScriptEnabled': True, 'offline': False, 'reducedMotion': 'no-preference', 'serviceWorkers': 'allow', 'viewport': {'height': 720, 'width': 1280}}</msg>
+<msg time="2024-02-09T16:28:12.854992" level="INFO">Successfully initialized new page object and opened url: https://shopist.io</msg>
+<arg>${URL}</arg>
+<arg>browser=chromium</arg>
+<arg>headless=False</arg>
+<arg>pause_on_failure=True</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Opens a new browser instance. Use this keyword for quick experiments or debugging sessions.</doc>
+<status status="PASS" start="2024-02-09T16:28:05.899944" elapsed="6.955048"/>
+</kw>
+<kw name="Click" owner="Browser">
+<arg>${MY_PROFILE_BUTTON_SELECTOR}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2024-02-09T16:28:12.854992" elapsed="0.527900"/>
+</kw>
+<kw name="Click" owner="Browser">
+<arg>${EDIT_PROFILE_BUTTON_SELECTOR}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2024-02-09T16:28:13.382892" elapsed="0.113084"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<msg time="2024-02-09T16:28:13.496978" level="INFO">Fills the text 'Osamah' in the given field.</msg>
+<arg>${FIRST_NAME_SELECTOR}</arg>
+<arg>${first_name}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2024-02-09T16:28:13.496978" elapsed="0.324048"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<msg time="2024-02-09T16:28:13.821026" level="INFO">Fills the text 'Amer' in the given field.</msg>
+<arg>${SECOND_NAME_SELECTOR}</arg>
+<arg>${second_name}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2024-02-09T16:28:13.821026" elapsed="0.010049"/>
+</kw>
+<kw name="Click" owner="Browser">
+<arg>${SAVE_PROFILE_BUTTON_SELECTOR}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2024-02-09T16:28:13.831075" elapsed="0.025100"/>
+</kw>
+<kw name="Close Browser" owner="Browser">
+<msg time="2024-02-09T16:28:13.996162" level="INFO">Closed browser</msg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-02-09T16:28:13.856175" elapsed="0.139987"/>
+</kw>
+<tag>ECommerce</tag>
+<doc>Test updating profile name on shopist.io</doc>
+<status status="PASS" start="2024-02-09T16:28:05.897945" elapsed="8.098217"/>
+</kw>
+<doc>Test updating profile name on shopist.io</doc>
+<status status="PASS" start="2024-02-09T16:28:05.895945" elapsed="8.100217"/>
+</test>
+<test id="s1-t2" name="Scrape Shopist Sofas" line="9">
+<kw name="Scrape Shopist Sofas" owner="ShopistKeywords">
+<arg>${URL}</arg>
+<arg>${OUTPUT_FILE}</arg>
+<status status="PASS" start="2024-02-09T16:28:14.012885" elapsed="9.471037"/>
+</kw>
+<kw name="Close Browser" owner="ShopistKeywords">
+<status status="PASS" start="2024-02-09T16:28:23.483922" elapsed="2.117951"/>
+</kw>
+<doc>Scrape sofa names and prices on shopist.io</doc>
+<status status="PASS" start="2024-02-09T16:28:14.011886" elapsed="11.589987"/>
+</test>
+<status status="PASS" start="2024-02-09T16:28:01.038391" elapsed="28.666486"/>
+</suite>
+<statistics>
+<total>
+<stat pass="2" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="2" fail="0" skip="0" id="s1" name="eCommerce tests">eCommerce tests</stat>
+</suite>
+</statistics>
+<errors>
+<msg time="2024-02-09T16:28:05.899944" level="WARN">Open Browser is for quick experimentation and debugging only. Use New Page for production.</msg>
+</errors>
+</robot>

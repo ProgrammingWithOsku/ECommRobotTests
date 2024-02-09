@@ -1,0 +1,16 @@
+# Ignore Pipenv virtual environment
+/.venv
+
+# Ignore Robot Framework output files
+/output.xml
+/log.html
+/report.html
+
+# Ignore any compiled Python files
+*.pyc
+
+# Ignore any local configuration files
+/.vscode
+/.idea
+/.vs
+/.Reports
